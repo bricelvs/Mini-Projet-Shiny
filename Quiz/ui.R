@@ -13,12 +13,12 @@ library(shiny)
 shinyUI(fluidPage(
     
     # Application title
-    titlePanel("Quizz de culture Generale"),
+    titlePanel("Quizz de culture Générale"),
     
     # Sidebar with a slider input for number of bins
     
-    radioButtons(inputId = "idRadio1", label = "Select one", selected = 3,
-                 choices =c("First" = 1, "Second" = 2, "Third" = 3)),
+    radioButtons(inputId = "idRadio1", label = "Lorsqu'un pancake prend l'avion à destination de Toronto et qu'il fait une escale technique à St Claude, on dit :", selected = 3,
+                 choices =c("qu'il n'est pas arrivé à Toronto" = 1, "Qu'il était supposé arriver à Toronto" = 2, "Qu'est-ce qu'il fout ce maudit pancake, tabernacle ?" = 3, "réponse D" = 4)),
     radioButtons(inputId = "idRadio2", label = "Quel est la capitale de la France", selected = 3,
                  choices =c("Paris" = 1, "Berlin" = 2, "Monaco" = 3)),
     radioButtons(inputId = "idRadio3", label = "Select one", selected = 3,
