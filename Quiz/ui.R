@@ -57,4 +57,5 @@ shinyUI(fluidPage(
                  choices =c("First" = 1, "Second" = 2, "Third" = 3)),
     radioButtons(inputId = "idRadio", label = "Select one", selected = 3,
                  choices =c("First" = 1, "Second" = 2, "Third" = 3)),  # For the server input$idRadio is a "character"13))
+    actionButton(inputId = "idActionButton", label = "Valider !",icon =icon("hand-spock-o"))
 ))
