@@ -13,7 +13,7 @@ shinyUI(fluidPage(
     radioButtons(inputId = "idRadio2", label = "Quel est la capitale de la France", selected = F,
                  choices =c("Paris" = 1, "Berlin" = 2, "Monaco" = 3)),
     radioButtons(inputId = "idRadio1", label = "Select one", selected = F,
-                 choices =c("First" = 1, "Second" = 2, "Third" = 3)),
+                 choices =c("Uno" = 1, "Second" = 2, "Third" = 3)),
     radioButtons(inputId = "idRadio3", label = "Select one", selected = F,
                  choices =c("First" = 1, "Second" = 2, "Third" = 3)),
     radioButtons(inputId = "idRadio4", label = "Select one", selected = F,
