@@ -4,12 +4,12 @@ library(shiny)
 shinyUI(fluidPage(
     
     # Application title
-    titlePanel("Quizz de culture GÈnÈrale"),
+    titlePanel("Quizz de culture G√©n√©rale"),
     
     # Sidebar with a slider input for number of bins
     
-    radioButtons(inputId = "idRadio1", label = "Lorsqu'un pancake prend l'avion ‡ destination de Toronto et qu'il fait une escale technique ‡ St Claude, on dit :", selected = F,
-                 choices =c("qu'il n'est pas arrivÈ ‡ Toronto" = 1, "Qu'il Ètait supposÈ arriver ‡ Toronto" = 2, "Qu'est-ce qu'il fout ce maudit pancake, tabernacle ?" = 3, "rÈponse D" = 4)),
+    radioButtons(inputId = "idRadio1", label = "Lorsqu'un pancake prend l'avion √† destination de Toronto et qu'il fait une escale technique √† St Claude, on dit :", selected = F,
+                 choices =c("qu'il n'est pas arriv√© √† Toronto" = 1, "Qu'il √©tait suppos√© arriver √† Toronto" = 2, "Qu'est-ce qu'il fout ce maudit pancake, tabernacle ?" = 3, "r√©ponse D" = 4)),
     radioButtons(inputId = "idRadio2", label = "Quel est la capitale de la France", selected = F,
                  choices =c("Paris" = 1, "Berlin" = 2, "Monaco" = 3)),
     radioButtons(inputId = "idRadio1", label = "Select one", selected = F,
@@ -51,6 +51,7 @@ shinyUI(fluidPage(
     radioButtons(inputId = "idRadio20", label = "Que veut dire ISARA ?", selected = F,
                  choices =c("First" = 1, "Institut sup√©rieur d'agriculture Rh√¥ne-Alpes" = 2, "Third" = 3)),  
     # For the server input$idRadio is a "character"13))
-    actionButton(inputId = "idActionButton", label = "Valider !",icon =icon("hand-spock-o"))
-    
+    actionButton(inputId = "idActionButton", label = "Valider !",icon =icon("hand-spock-o")),
+    verbatimTextOutput(outputId = "Bon"),
+    verbatimTextOutput(outputId = "Mauvais"),
 ))
