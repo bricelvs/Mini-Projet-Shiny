@@ -11,14 +11,14 @@ library(shiny)
 
 # Define UI for application that draws a histogram
 shinyUI(fluidPage(
-
+    
     # Application title
     titlePanel("Old Faithful Geyser Data"),
-
+    
     # Sidebar with a slider input for number of bins
     
     radioButtons(inputId = "idRadio", label = "Select one", selected = 3,
-                      choices =c("First" = 1, "Second" = 2, "Third" = 3)),
+                 choices =c("First" = 1, "Second" = 2, "Third" = 3)),
     radioButtons(inputId = "idRadio", label = "Select one", selected = 3,
                  choices =c("First" = 1, "Second" = 2, "Third" = 3)),
     radioButtons(inputId = "idRadio", label = "Select one", selected = 3,
